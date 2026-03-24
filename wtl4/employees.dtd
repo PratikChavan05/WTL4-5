@@ -1,0 +1,10 @@
+<!ELEMENT organization (employee+)>
+
+<!ELEMENT employee (emp_id, name, department, experience, contact, joining_date)>
+
+<!ELEMENT emp_id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT experience (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT joining_date (#PCDATA)>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<organization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="employees.xsd">
+
+    <employee>
+        <emp_id>101</emp_id>
+        <name>Siddhi Patil</name>
+        <department>IT</department>
+        <experience>3</experience>
+        <contact>9876543210</contact>
+        <joining_date>2022-06-15</joining_date>
+    </employee>
+
+    <employee>
+        <emp_id>104</emp_id>
+        <name>Rohan Aher</name>
+        <department>Sales</department>
+        <experience>4</experience>
+        <contact>9012345678</contact>
+        <joining_date>2021-08-20</joining_date>
+    </employee>
+
+    <employee>
+        <emp_id>106</emp_id>
+        <name>Amit Deshpande</name>
+        <department>Sales</department>
+        <experience>7</experience>
+        <contact>9876001234</contact>
+        <joining_date>2018-02-25</joining_date>
+    </employee>
+
+    <employee>
+        <emp_id>110</emp_id>
+        <name>Arjun Singh</name>
+        <department>Sales</department>
+        <experience>5</experience>
+        <contact>9432109876</contact>
+        <joining_date>2020-12-10</joining_date>
+    </employee>
+
+    <employee>
+        <emp_id>111</emp_id>
+        <name>Meera Iyer</name>
+        <department>Sales</department>
+        <experience>4</experience>
+        <contact>9321098765</contact>
+        <joining_date>2021-07-14</joining_date>
+    </employee>
+
+    <employee>
+        <emp_id>115</emp_id>
+        <name>Pooja Kapoor</name>
+        <department>Sales</department>
+        <experience>4</experience>
+        <contact>9087654321</contact>
+        <joining_date>2021-03-08</joining_date>
+    </employee>
+
+</organization>

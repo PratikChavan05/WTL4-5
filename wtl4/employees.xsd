@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="organization">
+    <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="employee" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <!-- emp_id must be positive -->
+                        <xs:element name="emp_id">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:int">
+                                    <xs:minInclusive value="1"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- name length restriction -->
+                        <xs:element name="name">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="2"/>
+                                    <xs:maxLength value="50"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- department must be from fixed values -->
+                        <xs:element name="department">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="IT"/>
+                                    <xs:enumeration value="HR"/>
+                                    <xs:enumeration value="Finance"/>
+                                    <xs:enumeration value="Sales"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- experience range -->
+                        <xs:element name="experience">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:int">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="40"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- contact must be 10 digit number -->
+                        <xs:element name="contact">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[0-9]{10}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <!-- joining date must not be future (approx using max) -->
+                        <xs:element name="joining_date">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date">
+                                    <xs:maxInclusive value="2026-12-31"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>
