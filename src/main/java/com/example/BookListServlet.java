@@ -125,3 +125,6 @@ public class BookListServlet extends HttpServlet {
 
 // mvn tomcat7:run
 // mysql -u root -p < /home/pict/Documents/wtl2_assign5/db_setup.sql
+
+// git config --global user.email"pratikpchavan75@gmail.com"
+// git config --global user.name "PratikChavan05"
